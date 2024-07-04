@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>GitFav</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="/assets/Gitfav.svg" alt="logo GitFav">
+            
+            <div class="search">
+                <label for="input-search" class="sr-only">Digite o Github username que quer favoritar</label>
+                <input id="input-search" name="githubuser" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button>
+                    <img src="/assets/star.png" alt="">
+                    FAVORITAR
+                </button>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/LeonardoSantos16.png" alt="">
+                        <a href="https://github.com/LeonardoSantos16" target="_black">
+                            <p>Leonardo Santos</p>
+                            <span>LeonardoSantos16</span>
+                        </a>
+                    </td>
+                    <td class="Repositories">
+                        70
+                    </td>
+                    <td class="Followers">
+                        1
+                    </td>
+                    <td class="acao">
+                        <button class="remove">Remover</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/LeonardoSantos16.png" alt="">
+                        <a href="https://github.com/LeonardoSantos16" target="_black">
+                            <p>Leonardo Santos</p>
+                            <span>LeonardoSantos16</span>
+                        </a>
+                    </td>
+                    <td class="Repositories">
+                        70
+                    </td>
+                    <td class="Followers">
+                        1
+                    </td>
+                    <td class="acao">
+                        <button class="remove">Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="default">
+          
+                <img src="/assets/Estrela.svg" alt="Estrela">
+                Nenhum favorito ainda
+            
+        </div>
+    </div>
+</body>
+</html>
